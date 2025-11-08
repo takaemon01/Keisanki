@@ -33,10 +33,10 @@
 
   <script src="script.js"></script>
 
-  <!-- Service Worker 登録コード -->
+  <!-- Service Worker 登録 -->
   <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('./service-worker.js')
+      navigator.serviceWorker.register('service-worker.js')
         .then(() => console.log('Service Worker registered'))
         .catch(err => console.log('SW registration failed:', err));
     }
